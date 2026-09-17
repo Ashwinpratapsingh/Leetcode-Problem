@@ -5,7 +5,7 @@ public:
         for(int i=0;i<words.size();i++){
             int a=0;
             for(int j=0;j<words[i].size();j++){
-                a+=w[words[i][j]-'a'];
+                a+=w[words[i][j]-97];
             }
             a%=26;
             s.push_back((char)(97+25-a));
